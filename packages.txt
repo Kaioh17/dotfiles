@@ -1,0 +1,10 @@
+# Desktop
+i3-wm i3lock xss-lock dex i3status i3blocks dmenu
+xorg-server xorg-xinit xorg-xrandr
+polybar picom rofi feh dunst libnotify kitty redshift
+network-manager-applet libpulse
+python lm_sensors
+# Login screen
+lightdm lightdm-gtk-greeter accountsservice adw-gtk-theme papirus-icon-theme
+# Fonts
+ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd ttf-iosevka-nerd ttf-hack-nerd inter-font ttf-ibm-plex

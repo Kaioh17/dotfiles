@@ -1,0 +1,41 @@
+/* Matches ~/.config/polybar/config.ini [colors] */
+* {
+    bg:       #282A2E;
+    bg-alt:   #373B41;
+    fg:       #C5C8C6;
+    primary:  #F0C674;
+    disabled: #707880;
+
+    background-color: transparent;
+    text-color:       @fg;
+    font:             "Adwaita Mono 11";
+}
+
+window {
+    width:            40%;
+    background-color: @bg;
+    border:           0 0 3px 0;
+    border-color:     @primary;
+    border-radius:    6px;
+    padding:          12px;
+}
+
+mainbox  { spacing: 10px; children: [ inputbar, listview ]; }
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius:    6px;
+    padding:          8px 10px;
+    spacing:          8px;
+    children:         [ prompt, entry ];
+}
+prompt   { text-color: @primary; }
+entry    { placeholder: "Search"; placeholder-color: @disabled; cursor: text; }
+
+listview { lines: 8; spacing: 2px; scrollbar: false; fixed-height: false; }
+
+element               { padding: 6px 10px; border-radius: 6px; spacing: 10px; }
+element selected      { background-color: @bg-alt; text-color: @primary; }
+element-icon          { size: 1.2em; }
+element-text          { text-color: inherit; vertical-align: 0.5; }
+element-icon, element-text { background-color: transparent; }

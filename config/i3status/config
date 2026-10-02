@@ -1,0 +1,42 @@
+general {
+    colors = true
+    interval = 5
+}
+
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "wireless _first_"
+order += "battery all"
+order += "volume master"
+order += "tztime local"
+
+cpu_usage {
+    format = "CPU: %usage"
+}
+
+memory {
+    format = "RAM: %used / %total"
+}
+
+disk "/" {
+    format = "Disk: %avail free"
+}
+
+wireless _first_ {
+    format_up = "WiFi: %essid (%quality)"
+    format_down = "WiFi: down"
+}
+
+battery all {
+    format = "Bat: %status %percentage"
+}
+
+volume master {
+    format = "Vol: %volume"
+    device = "default"
+}
+
+tztime local {
+    format = "%Y-%m-%d %H:%M"
+}

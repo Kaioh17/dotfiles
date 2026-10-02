@@ -1,0 +1,9 @@
+# backups made while editing
+*.bak
+*.bak[0-9]*
+*.backup-*
+
+# wallpapers stay local (see README)
+*.jpg
+*.jpeg
+!assets/*

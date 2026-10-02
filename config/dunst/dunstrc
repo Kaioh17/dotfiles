@@ -1,0 +1,71 @@
+# Colours match ~/.config/polybar/config.ini [colors]
+
+[global]
+    monitor = 0
+    follow = mouse
+
+    width = 350
+    height = (0, 200)
+    origin = top-right
+    # clear polybar (24pt) plus i3 outer gaps
+    offset = (10, 45)
+
+    notification_limit = 5
+    progress_bar = true
+    progress_bar_height = 8
+    progress_bar_frame_width = 0
+    progress_bar_corner_radius = 4
+    highlight = "#F0C674"
+
+    padding = 10
+    horizontal_padding = 12
+    text_icon_padding = 12
+    gap_size = 6
+    frame_width = 2
+    # same as picom corner-radius so the frame isn't clipped
+    corner_radius = 12
+    separator_color = frame
+
+    font = Adwaita Mono 10
+    line_height = 2
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    ellipsize = middle
+    word_wrap = yes
+    show_age_threshold = 60
+    stack_duplicates = true
+    hide_duplicate_count = false
+
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 48
+
+    sticky_history = yes
+    history_length = 20
+    browser = /usr/bin/xdg-open
+    always_run_script = true
+
+    mouse_left_click = do_action, close_current
+    mouse_middle_click = close_all
+    mouse_right_click = close_current
+
+[urgency_low]
+    background = "#282A2E"
+    foreground = "#707880"
+    frame_color = "#373B41"
+    timeout = 5
+
+[urgency_normal]
+    background = "#282A2E"
+    foreground = "#C5C8C6"
+    frame_color = "#F0C674"
+    timeout = 8
+
+[urgency_critical]
+    background = "#282A2E"
+    foreground = "#C5C8C6"
+    frame_color = "#A54242"
+    highlight = "#A54242"
+    timeout = 0
